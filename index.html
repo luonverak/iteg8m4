@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="logo">
+                <div class="logo1">
+                    <img src="image/RUPP_logo.png" alt>
+                </div>
+                <div class="logo2">
+                    <img src="image/fe-logo.png" alt>
+                </div>
+                <div class="text-head">
+                    <div class="on-text">
+                        <h1>មហាវិទ្យាល័យវិស្វកម្ម</h1>
+                    </div>
+                    <div class="sub-text">
+                        <p>FACULTY OF ENGINEERING</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="math-meaning">
+            <div class="box-slide">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image/17.jpg" class="d-block " alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/20.jpg" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/21.jpg" class="d-block" alt="...">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="math-caculat">
+            <div class="body-enc">
+                <div class="head-enc">
+                    <h1>Encryption Process</h1>
+                </div>
+                <div class="enter-enc">
+                    <h2>Message to Encrypt</h2>
+                    <input type="text" name id="enc_value" placeholder="Enter message to Encrypt">
+                </div>
+                <div class="enter-enc2">
+                    <h2>Encryption keys</h2>
+                    <input type="text" name id="enc_key" placeholder="Enter Encryption keys">
+                </div>
+
+                <div class="enc-result">
+                    <h2>Encryption Results</h2>
+                    <input type="text" name id="result" placeholder="Your Encryption Results !">
+                </div>
+                <div class="controller">
+                    <button onclick="encrypt()" id="btn_encrypt" class="btn btn-primary me-3"
+                        type="button">Encrypt</button>
+                    <button onclick="decrypt()" class="btn btn-danger " type="button">Decrypt</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="footer-logo">
+            <a target="_blank" href="https://goo.gl/maps/3zhRWq4dUtz1t1E49">
+                <img src="image/RUPP_logo.png" alt>
+                <div class="university">
+                    <div class="on-text-footer">
+                        <h1>សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ</h1>
+                    </div>
+                    <div class="sub-text-footer">
+                        <p>ROYAL UNIVERSITY OF PHNOM PENH</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="lecturer">
+            <p>Lecturer Mr. LIM SEYHA</p>
+        </div>
+        <div class="developer">
+            <p>Develop by ITE-G8-M4</p>
+        </div>
+    </footer>
+    <!-- Mobile -->
+    <main>
+        <div class="mob-head">
+            <div class="mob-logo">
+                <img src="image/RUPP_logo.png" alt>
+            </div>
+            <div class="mob-logo2">
+                <img src="image/fe-logo.png" alt>
+            </div>
+            <div class="mob-text-head">
+                <div class="mob-on-text">
+                    <h1>មហាវិទ្យាល័យវិស្វកម្ម</h1>
+                </div>
+                <div class="mob-sub-text">
+                    <p>FACULTY OF ENGINEERING</p>
+                </div>
+            </div>
+        </div>
+        <div class="mob-main-content" id="mob-math-caculat">
+            <div class="mob-math-meaning">
+                <div class="box-slide">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner mobile-slide">
+                            <div class="carousel-item active">
+                                <img src="image/17.jpg" class="d-block " alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/20.jpg" class="d-block" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/21.jpg" class="d-block" alt="...">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mob-math-caculat">
+                <div class="mob-body-enc" id="mob-math">
+                    <div class="mob-head-enc">
+                        <h1>Encryption Process</h1>
+                    </div>
+                    <div class="mob-enter-enc">
+                        <h2>Message to Encrypt</h2>
+                        <input type="text" name id="mob_enc_value" placeholder="Enter message to Encrypt">
+                    </div>
+                    <div class="mob-enter-enc2">
+                        <h2>Encryption keys</h2>
+                        <input type="text" name id="mob_enc_key" placeholder="Enter Encryption keys">
+                    </div>
+
+                    <div class="mob-enc-result">
+                        <h2>Encryption Results</h2>
+                        <input type="text" name id="mob_result" placeholder="Your Encryption Results !">
+                    </div>
+                    <div class="mob-controller">
+                        <button onclick="mob_encrypt()" id="btn_encrypt" class="btn btn-primary me-3"
+                            type="button">Encrypt</button>
+                        <button onclick="mob_decrypt()" class="btn btn-danger " type="button">Decrypt</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer class="mobile">
+            <div class="mob-footer-logo">
+                <a target="_blank" href="https://goo.gl/maps/3zhRWq4dUtz1t1E49">
+                    <img src="image/RUPP_logo.png" alt>
+                    <div class="mob-university">
+                        <div class="mob-on-text-footer">
+                            <h1>សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ</h1>
+                        </div>
+                        <div class="mob-sub-text-footer">
+                            <p>ROYAL UNIVERSITY OF PHNOM PENH</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="mob-lecturer">
+                <p>Lecturer Mr. LIM SEYHA</p>
+            </div>
+            <div class="mob-developer">
+                <p>Develop by ITE-G8-M4</p>
+            </div>
+        </footer>
+    </main>
+</body>
+<script>
+
+    function encrypt() {
+        var shift = parseInt(document.getElementById("enc_key").value);
+        var message = document.getElementById("enc_value").value;
+        var result = "";
+
+        for (var i = 0; i < message.length; i++) {
+            var charCode = message.charCodeAt(i);
+
+            if (charCode >= 65 && charCode <= 90) {
+                // Uppercase letters
+                charCode = ((charCode - 65 + shift) % 26) + 65;
+            } else if (charCode >= 97 && charCode <= 122) {
+                // Lowercase letters
+                charCode = ((charCode - 97 + shift) % 26) + 97;
+            }
+
+            result += String.fromCharCode(charCode);
+        }
+
+        document.getElementById("result").value = result;
+    }
+
+    function decrypt() {
+        var shift = parseInt(document.getElementById("enc_key").value);
+        shift = 26 - shift; // To reverse the shift for decryption
+        var message = document.getElementById("enc_value").value;
+        var result = "";
+
+        for (var i = 0; i < message.length; i++) {
+            var charCode = message.charCodeAt(i);
+
+            if (charCode >= 65 && charCode <= 90) {
+                // Uppercase letters
+                charCode = ((charCode - 65 + shift) % 26) + 65;
+            } else if (charCode >= 97 && charCode <= 122) {
+                // Lowercase letters
+                charCode = ((charCode - 97 + shift) % 26) + 97;
+            }
+
+            result += String.fromCharCode(charCode);
+        }
+
+        document.getElementById("result").value = result;
+    }
+
+
+
+    function mob_encrypt() {
+
+        var shift = parseInt(document.getElementById("mob_enc_key").value);
+        var message = document.getElementById("mob_enc_value").value;
+        var result = "";
+
+        for (var i = 0; i < message.length; i++) {
+            var charCode = message.charCodeAt(i);
+
+            if (charCode >= 65 && charCode <= 90) {
+                // Uppercase letters
+                charCode = ((charCode - 65 + shift) % 26) + 65;
+            } else if (charCode >= 97 && charCode <= 122) {
+                // Lowercase letters
+                charCode = ((charCode - 97 + shift) % 26) + 97;
+            }
+
+            result += String.fromCharCode(charCode);
+        }
+
+        document.getElementById("mob_result").value = result;
+    }
+    function mob_decrypt() {
+        var shift = parseInt(document.getElementById("mob_enc_key").value);
+        shift = 26 - shift; // To reverse the shift for decryption
+        var message = document.getElementById("mob_enc_value").value;
+        var result = "";
+
+        for (var i = 0; i < message.length; i++) {
+            var charCode = message.charCodeAt(i);
+
+            if (charCode >= 65 && charCode <= 90) {
+                // Uppercase letters
+                charCode = ((charCode - 65 + shift) % 26) + 65;
+            } else if (charCode >= 97 && charCode <= 122) {
+                // Lowercase letters
+                charCode = ((charCode - 97 + shift) % 26) + 97;
+            }
+
+            result += String.fromCharCode(charCode);
+        }
+
+        document.getElementById("mob_result").value = result;
+    }
+</script>
+
+</html>
